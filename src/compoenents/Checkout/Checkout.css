@@ -1,0 +1,63 @@
+.checkout{
+    background-color: #3cc360;
+    width: 30rem;
+    margin:auto;
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-list{
+    margin-bottom: 1rem;
+}
+
+hr{
+    height: 3px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.checkout-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.checkout-actions button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 10rem;
+    border: 0px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.checkout-actions button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.checkout-total-price{
+    margin-bottom: 1rem;
+}
+
+.order-btn{
+    background-color: #008000;
+}
+
+.go-back-btn{
+    background-color: red;
+}

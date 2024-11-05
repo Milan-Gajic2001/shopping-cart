@@ -1,0 +1,13 @@
+
+
+.product-list{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+
+

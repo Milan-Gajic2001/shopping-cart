@@ -1,0 +1,41 @@
+
+nav{
+    padding: 1rem 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #3cc360;
+}
+.logo{
+    margin-right: 2rem; 
+}
+ul{
+    list-style-type:none;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list li{
+    margin-right: 1rem; 
+    transition: all 0.5s;
+    padding: 0.5rem;   
+    border-radius: 10px;
+    
+}
+
+.nav-list li:hover{
+    background-color: white;
+    color: rgb(90, 204, 120);
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: inherit;   
+}
+

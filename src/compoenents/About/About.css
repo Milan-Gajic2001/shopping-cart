@@ -1,0 +1,28 @@
+.about{
+    background-color: #3cc360;
+    width: 50rem;
+    margin:auto;
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.about-text{
+    margin-bottom: 1rem;
+}
+
+.about-list{
+    list-style-type: circle;
+}
+
+.about-list li{
+    margin-bottom: 1.5rem;
+}
