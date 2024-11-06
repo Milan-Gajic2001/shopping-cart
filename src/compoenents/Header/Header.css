@@ -105,7 +105,9 @@ ul{
     background-color: white;
     cursor: pointer;
 }
-
+.logo-res{
+    display: none;
+}
 
 @media (max-width: 768px){
     
@@ -123,5 +125,8 @@ ul{
 
     .cart-btn{
         display: none;
+    }
+    .logo-res{
+        display: block;
     }
 }

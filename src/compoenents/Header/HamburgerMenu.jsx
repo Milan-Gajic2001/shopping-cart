@@ -17,7 +17,7 @@ export default function HamburgerMenu() {
 
   return (
     <>
-      <Link to="/">
+      <Link to="/" className="logo-res">
         <img className="logo" src={logo} alt="logo" />
       </Link>
       <div className="hamburger-menu" onClick={toggleHumburgerMenu}>
