@@ -1,5 +1,6 @@
 
-nav{
+
+    nav{
     padding: 1rem 6rem;
     color: white;
     display: flex;
@@ -18,7 +19,6 @@ ul{
 .nav-list{
     display: flex;
     align-items: center;
-    
 }
 
 .nav-list li{
@@ -38,4 +38,6 @@ ul{
     text-decoration: none;
     color: inherit;   
 }
+
+
 
