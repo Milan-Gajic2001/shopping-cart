@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {isVisible: false};
+const initialState = {isVisible: false, isHamburgerVisible: false};
 
 
 const uiSlice = createSlice({
@@ -9,6 +9,9 @@ const uiSlice = createSlice({
     reducers:{
         toggle(state){
             state.isVisible = !state.isVisible;
+        },
+        toggleHambruger(state){
+            state.isHamburgerVisible = !state.isHamburgerVisible;
         }
     }
 })

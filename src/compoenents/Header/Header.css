@@ -1,6 +1,5 @@
 
-
-    nav{
+nav{
     padding: 1rem 6rem;
     color: white;
     display: flex;
@@ -39,5 +38,90 @@ ul{
     color: inherit;   
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: #ccffcc;
+    border-radius: 2px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    background-color: #3cc360;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
 
 
+.dropdown ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown ul li {
+    padding: 1rem;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+
+
+.dropdown ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+.cart-hamburger-btn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.cart-hamburger-btn:hover{
+    color: #3cc360;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+    
+    .hamburger-menu{
+        display: flex;
+    }
+    
+    .nav-list{
+        display: none;
+    }
+    
+    .dropdown.show{
+        display: block;
+    }
+
+    .cart-btn{
+        display: none;
+    }
+}

@@ -1,4 +1,5 @@
 import "./Header.css";
+import HamburgerMenu from "./HamburgerMenu";
 import img from "../../assets/logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
@@ -34,6 +35,7 @@ export default function Header() {
         <button className="cart-btn main-btn" onClick={toggleModal}>
           Cart ({cart.length})
         </button>
+        <HamburgerMenu />
       </nav>
     </header>
   );
