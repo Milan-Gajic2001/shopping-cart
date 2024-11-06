@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 export default function Root() {
   const isVisible = useSelector((state) => state.ui.isVisible);
-  const orders = useSelector((state) => state.orders.orders);
   return (
     <>
       {isVisible && <Cart />}

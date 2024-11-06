@@ -7,9 +7,20 @@ export default function ProductDetails() {
 
   return (
     <div className="meal-details">
-      <h1>{meal.name}</h1>
-      <img className="details-img" src={meal.img} alt="meal-img" />
-      <p>- {meal.description}</p>
+      <img className="meals-img" src={meal.img} alt="meal-img" />
+      <div className="details">
+        <h1>{meal.name}</h1>
+        <p className="meal-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ea
+          veniam laudantium saepe veritatis adipisci soluta quos eveniet aperiam
+          molestiae eos consequatur sunt suscipit, nesciunt fugiat voluptates
+          corporis deserunt, numquam voluptatem odit ratione repudiandae quidem!
+          Deserunt repellendus ut nesciunt vel, quae nisi animi reiciendis
+          veniam quod rerum et iusto velit, culpa alias molestiae hic!
+          Distinctio voluptate placeat magni temporibus odio earum quia itaque,
+          iure repudiandae ut et errmeal
+        </p>
+      </div>
     </div>
   );
 }
