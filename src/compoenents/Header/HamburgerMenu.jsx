@@ -7,6 +7,8 @@ import logo from "../../assets/logo.png";
 export default function HamburgerMenu() {
   const dispatch = useDispatch();
 
+  const cart = useSelector((state) => state.cart.cart);
+
   const isHamburgerVisible = useSelector(
     (state) => state.ui.isHamburgerVisible
   );
@@ -35,7 +37,9 @@ export default function HamburgerMenu() {
           </li>
           <li>
             <Link to="checkout">
-              <button className="cart-hamburger-btn">Cart (0)</button>
+              <button className="cart-hamburger-btn">
+                Cart ({cart.length})
+              </button>
             </Link>
           </li>
         </ul>

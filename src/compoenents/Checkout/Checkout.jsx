@@ -3,8 +3,6 @@ import "./Checkout.css";
 import { Link, useNavigate } from "react-router-dom";
 import { cartActions } from "../../store/cart-slice";
 import { orderActions } from "../../store/orders-slice";
-import { useEffect } from "react";
-import { uiActions } from "../../store/ui-slice";
 
 export default function Checkout() {
   const cart = useSelector((state) => state.cart.cart);
