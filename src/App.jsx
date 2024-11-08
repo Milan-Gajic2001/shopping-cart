@@ -9,12 +9,14 @@ const ProductDetails = lazy(() =>
   import("./compoenents/ProductDetails/ProductDetails")
 );
 const Checkout = lazy(() => import("./compoenents/Checkout/Checkout"));
+import ErrorPage from "./compoenents/ErrorPage/ErrorPage";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
