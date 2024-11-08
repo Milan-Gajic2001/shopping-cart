@@ -25,7 +25,7 @@ export default function ProductDetails() {
   );
 }
 
-export function mealLoader({ request, params }) {
+export function loader({ request, params }) {
   const meal = MEALS[params.id - 1];
   return meal;
 }
