@@ -8,11 +8,16 @@ export default function ErrorPage() {
   if (error.status === 404) {
     message = "Resource for page not found";
   }
+  if (error.status === 500) {
+    message = error.data.message;
+  }
   return (
     <div className="error-div">
       <div className="error">
-        <h1>{message ? message : "Error occured"}</h1>
-        <p className="error-text">{error.error.message}</p>
+        <h1>{`Error status ${error.status}`}</h1>
+        <p className="error-text">
+          {message ? message : "Something went wrong!"}
+        </p>
       </div>
     </div>
   );

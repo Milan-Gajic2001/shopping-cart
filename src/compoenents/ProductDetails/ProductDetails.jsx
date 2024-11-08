@@ -1,10 +1,9 @@
-import { useLoaderData } from "react-router-dom";
+import { json, useLoaderData } from "react-router-dom";
 import MEALS from "../../meals";
 import "./ProductDetails.css";
 
 export default function ProductDetails() {
   const meal = useLoaderData();
-
   return (
     <div className="meal-details">
       <img className="meals-img" src={meal.img} alt="meal-img" />
@@ -27,5 +26,8 @@ export default function ProductDetails() {
 
 export function loader({ request, params }) {
   const meal = MEALS[params.id - 1];
+  if (!meal) {
+    throw json({ message: "Could not find a meal" }, { status: 500 });
+  }
   return meal;
 }

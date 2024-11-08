@@ -10,6 +10,8 @@ const ProductDetails = lazy(() =>
 );
 const Checkout = lazy(() => import("./compoenents/Checkout/Checkout"));
 import ErrorPage from "./compoenents/ErrorPage/ErrorPage";
+// Loader
+import { loader } from "./compoenents/ProductDetails/ProductDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -41,10 +43,7 @@ function App() {
               <ProductDetails />
             </Suspense>
           ),
-          loader: () =>
-            import("./compoenents/ProductDetails/ProductDetails").then(
-              (module) => module.loader()
-            ),
+          loader: loader,
         },
         {
           path: "checkout",
