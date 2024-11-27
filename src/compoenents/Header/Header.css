@@ -130,3 +130,11 @@ ul{
         display: block;
     }
 }
+
+@media (max-width:550px) {
+    
+   nav{
+    padding: 1rem 4rem;
+   }
+
+}

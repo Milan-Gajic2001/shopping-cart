@@ -8,7 +8,7 @@ export default function ProductDetails() {
     <div className="meal-details">
       <img className="meals-img" src={meal.img} alt="meal-img" />
       <div className="details">
-        <h1>{meal.name}</h1>
+        <h1 className="meal-title">{meal.name}</h1>
         <p className="meal-desc">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ea
           veniam laudantium saepe veritatis adipisci soluta quos eveniet aperiam

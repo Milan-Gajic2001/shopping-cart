@@ -12,10 +12,9 @@
 
 /* RESPONSIVE */
 
-/* From 1024px to 1200px */
+
 
 @media (min-width: 1024px) and (max-width:1200px){
-
     .product-list{
         width: 70%;
         grid-template-columns: 1fr 1fr ;
@@ -23,8 +22,8 @@
 }
 
 
-/* From 768px to 1024px */
-@media (min-width: 768px) and (max-width:1024px){
+
+@media (min-width: 600px) and (max-width:1024px){
     .product-list{
         width: 70%;
         grid-template-columns: 70%;
@@ -34,22 +33,13 @@
 }
 
 
-/* From 480px to 768px */
-@media (min-width: 480px) and (max-width:768px){
+
+@media (min-width: 320px) and (max-width:600px){
     .product-list{
-        width: 80%;
+        width: 90%;
         grid-template-columns: 100%;
         justify-content: center;
         align-items: center;
     }
 }
 
-/* From 320px to 480px
-@media (min-width: 320px) and (max-width:480px){
-    .product-list{
-        width: 80%;
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-} */

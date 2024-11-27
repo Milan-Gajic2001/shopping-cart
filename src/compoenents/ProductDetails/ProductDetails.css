@@ -30,27 +30,89 @@
 }
 
 
-@media (max-width:1440px){
+
+@media (max-width:1450px) {
     .meal-details{
-        width: 80%;
+        width: 70%;
     }
     
-    .meals-img{
-        max-width: 350px;
+    .meal-desc{
+        font-size: 1.4rem;
     }
 
+    .meals-img{
+        width: 50%;
+    }
+
+}
+
+
+@media(max-width:1250px){
     .meal-desc{
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.2rem;
+        line-height: 1.2;
     }
 }
 
-@media (max-width: 768px){
+
+@media (max-width:1050px) {
+    
     .meal-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 800px;
+        width: 80%;
     }
+
+    .meal-desc{
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .meal-details{
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .meals-img{
+        width: 60%;
+        height: 275px;
+    }
+
+    .details{
+        padding: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .meal-details{
+        padding-top: 3rem;
+    }
+
+    .meals-img{
+        width: 70%;
+    }
+
+    .meal-title{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    
+    .meal-details{
+        width: 70%;
+    }
+
+    .meals-img{
+        width: 80%;
+        max-height: 175px;
+    }
+
+    .meal-desc{
+        font-size: 0.9rem;
+    }
+
 }

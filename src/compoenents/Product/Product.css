@@ -11,7 +11,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Text */
     text-align: center;
-    /* justify-content: space-between; */
     color: white;
     font-size: 20px;
     letter-spacing: 1.5px;
@@ -61,4 +60,12 @@
 .meal-details-link:hover{
     cursor: pointer;
     color: #008000;
+}
+
+
+
+@media (max-width:400px) {
+    .product-desc{
+        margin-bottom: 4rem;
+    }
 }

@@ -26,3 +26,18 @@ h2{
 .about-list li{
     margin-bottom: 1.5rem;
 }
+
+
+@media (max-width: 750px) {
+    
+    .details-title{
+        font-size: 32px;
+    }
+
+    .about{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 70%;
+    }
+
+}

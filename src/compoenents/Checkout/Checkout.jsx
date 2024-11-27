@@ -32,7 +32,7 @@ export default function Checkout() {
           return (
             <li className="checkout-item">
               <p>
-                {`${i + 1}. ${item.name}  x ${
+                {`${i + 1}. ${item.name} x${
                   item.quantity
                 }  = ${item.totalPrice.toFixed(2)}$`}
               </p>
